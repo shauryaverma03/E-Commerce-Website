@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Shopping site </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.png">
+</head>
+<style>
+body{
+    background-size: 100%;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+width: 100%;
+    height: auto;
+}
+.header_wrapper {
+    width: 100%;
+    height: 160px;
+    /*background: red;*/
+    margin: 0 auto;
+}
+.logo_icon_wrapper {
+width: 95%;
+height: 55%;
+    /*background: yellow;*/
+    margin: 0 auto;
+}
+.logo {
+    width: 30%;
+    height: 55%;
+    margin-top: 2%;
+    float: left;
+}
+.icon {
+    width: 30%;
+    height: 100%;
+    float: right;
+    /*background: red;*/
+}
+.icon a {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+    position: relative;
+    top: 40%;
+}
+.nav_search_wrapper {
+    height: 45%;
+    width: 100%;
+    background: black;
+    margin: 0 auto;
+}
+.navigation {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+.navigation ul {
+padding: 0; }
+navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 80px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navigation ul li a:hover {
+    border-bottom: 2px solid white;
+}
+.search-btn {
+    width: 25%;
+    height: 100%;
+    float: right;
+    line-height: 20px;
+}
+.search-btn input[type="text"] {
+    padding: 5px 40px;
+    margin-left: 20px;
+    padding-left: 2px;
+    background: black;
+    border: 1px solid #a1a1a1;
+    margin-top: 30px;
+    color: #fff;
+}
+.search-btn a {
+    color: #a1a1a1;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.slider_image {
+    height: 600px;
+width: 100%;
+}
+.main_image {
+    height: 100%;
+    width: 100%;
+}
+.main_image img {
+    height: 100%;
+    width: 100%;
+}
+footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 215px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0px 0 5px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a .logo{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 5px;
+	margin-bottom: 8px;
+}
+/* .logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+} */
+.list{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list li{
+    margin-left: 20px;
+}
+.list a:hover{
+    color: rgb(5,233,38);
+}
+</style>
+<body background="pink.jpg">
+    <CENTER><H2>Get Upto 30% Off<br>
+        New Arrivals</H2></CENTER>
+    <header>
+        <div class="header_wrapper">
+            <div class="logo_icon_wrapper">
+                <div class="logo">
+                    <img src="logo.png"
+width="50px" height="70px">
+                </div>
+                <div class="icon">
+                    <a href="" class="icon1-a"><i class="fas
+fa-shopping-cart"></i><span>Cart</span></a>
+                    <a href="index.html" class="icon1-a"><i class="fas
+fa-user"><span>Sign in</span></i></a>
+                </div>
+            </div><br>
+            <div class="nav_search_wrapper">
+                <div class="navigation">
+                    <ul class="list">
+                        <li><a href="Home page2.html">HOME</a></li>
+                        <li><a href="#">new arrivals</a></li>
+                        <li><a href="#">deals</a></li>
+                        <li><a
+href="Document3.html">Categories</a></li>
+                        <li><a
+href="Document4.html">PRODUCTS</a></li>
+</ul> </div>
+<div class="search-btn">
+    <input type="text" placeholder="What are you looking for?">
+    <a href="#"><i class="fas fa-search"></i></a>
+</div>
+</header>
+    <center><a href="Home page2.html"><img src="Screenshot 2023-11-18 at 12.48.34 AM.png" width="50%"
+height="50%"></a></center>
+    <!-- end of header section -->
+    </div>
+    <!--start footer section   -->
+	<footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Fashion<span>Ista</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Delivery</a>
+                ·
+                <a href="#">Returns</a>
+                ·
+                <a href="#">Discount</a>
+                ·
+                <a href="#">Special Offer</a>
+                ·
+                <a href="#">Contact Us</a>
+            </p>
+            <p class="footer-company-name">WebAceTechnology &copy; 2023</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Lovely Professional University</span> Phagwara, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 01234 56789</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">contact@fashionista.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Web Ace Technology is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/"><img src="instagram.jpg" class="logo"></a>
+                <a href="https://in.linkedin.com/"><img src="LinkedIn.png" class="logo"></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="twitter.jpg" class="logo"></a>
+                <a href="https://github.com/"><img src="GitHub.png" class="logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
