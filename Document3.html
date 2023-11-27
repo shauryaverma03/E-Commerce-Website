@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+     <title>Categories</title>
+     <link rel="icon" href="logo.png">
+ </head>
+ <style>
+     body{
+         background-size: 100%;
+} h1{
+       background-color: #bb2d69;
+   }
+   h2{
+       background-size: 100%;
+       color: brown;
+   }
+     .categories_pic {
+    width: 100%;
+    height: 500px;
+    margin-top: -30px;
+}
+.categories_wrapper {
+    width: 95%;
+    height: 100%;
+    /*background: yellow;*/
+    margin: -100px auto;
+    line-height: 60px;
+}
+.categories-heading {
+    width: 100%;
+    height: 35%;
+    /*background: blue;*/
+}
+.categories_wrapper span, h2 {
+    display: inline-block;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 130%;
+    position: relative;
+    bottom: -88px;
+}
+.pics {
+    width: 100%;
+    height: 60%;
+    /*background: pink; */
+}
+.pics .first {
+    height: 100%;
+    width: 18.4%;
+    /*background: black;*/
+    float: left;
+    overflow: hidden;
+    margin-left: 0;
+    position: relative;
+}
+.pics .first img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition: all 1.5s ease;
+}
+.pics .first:hover img {
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.pics .first:hover span {
+    color: #bb2d69;
+}
+.pics .first span {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    bottom: 20%;
+    height: 15%;
+    font-size: 95%;
+    line-height: 40px;
+    letter-spacing: 3px;
+    width: 100%;
+    margin-left: 0;
+    color: #fff;
+}
+.pics .second {
+    height: 100%;
+    width: 18.4%;
+    /*background: blue;*/
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.pics .second img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition: all 1.5s ease;
+}
+.pics .second span {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    bottom: 20%;
+    height: 15%;
+    margin-left: 0;
+    font-size: 95%;
+    line-height: 40px;
+    letter-spacing: 3px;
+    width: 100%;
+    color: #fff;
+}
+.pics .second:hover img {
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.pics .second:hover span {
+    color: #bb2d69;
+}
+.pics .third {
+    height: 100%;
+    width: 18.4%;
+    /*background: orange;*/
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-left: 2%;
+}
+.pics .third img {
+    height: 100%;
+    width: 100%
+    max-width: 100%;
+    transition: all 1.5s ease;
+}
+.pics .third span {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    bottom: 20%;
+    margin-left: 0;
+    height: 15%;
+    font-size: 95%;
+    line-height: 40px;
+    letter-spacing: 3px;
+    width: 100%;
+    color: #fff;
+}
+.pics .third:hover img {
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.pics .third:hover span {
+    color: #bb2d69;
+}
+.pics .forth {
+    height: 100%;
+    width: 18.4%;
+    /*background: yellow;*/
+    float: left;
+    margin-left: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.pics .forth img {
+    height: 100%;
+    width: 100%
+    max-width: 100%;
+    transition: all 1.5s ease;
+}
+.pics .forth span {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    bottom: 20%;
+    height: 15%;
+    font-size: 95%;
+    margin-left: 0;
+    line-height: 40px;
+    letter-spacing: 3px;
+    width: 100%;
+    color: #fff;
+}
+.pics .forth:hover img {
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.pics .forth:hover span {
+    color: #bb2d69;
+}
+.pics .fifth {
+    height: 100%;
+    width: 18.4%;
+    /*background: green;*/
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2%;
+}
+.pics .fifth img {
+    height: 100%;
+    width: 100%
+    max-width: 100%;
+    transition: all 1.5s ease;
+}
+.pics .fifth span {
+    background: rgba(0,0,0,0.5);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    bottom: 20%;
+    height: 15%;
+    margin-left: 0;
+    font-size: 95%;
+    line-height: 50px;
+    letter-spacing: 3px;
+    width: 100%;
+    color: #fff;
+}
+.pics .fifth:hover img {
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.pics .fifth:hover span {
+    color: #bb2d69;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+ </style>
+ <body background="pink.jpg">
+    <div class="icon"><right>
+    <a href="D:\html\css\shopping.html"
+class="icon1-a"><span><a href="Home page2.html" class="link">Home / </a><a href="Document3.html" class="link"> Categories</a></span></a></right>
+    </div><br><br>
+     <div class="categories_pic">
+         <div class="categories_wrapper">
+             <div>
+                 <SPAN></SPAN><h1>CATEGORIES</h1></SPAN>
+             </div>
+             <div class="pics">
+                 <div class="first">
+                 <a href="https://www.myntra.com/mens-watches">
+<img src="myntra6.png">
+                     <span>Watches</span>
+</a> </div>
+             <div class="second">
+                <a href="https://www.myntra.com/men-sneakers">
+                    <img src="myntra10.png">
+                    <span>Sneakers</span>
+                </a>
+            </div>
+            <div class="third">
+                <a href="https://www.myntra.com/men-tshirts">
+                    <img src="myntra8.png">
+                    <span>T-shirts</span>
+                </a>
+            </div>
+            <div class="forth">
+                <a href="https://www.myntra.com/men-jackets">
+                    <img src="myntra11.png">
+                    <span>Jackets</span>
+                </a>
+            </div>
+            <div class="fifth">
+                <a href="https://www.myntra.com/men-blazers">
+                    <img src="myntra1.png">
+                    <span>Blazers & Coats</span>
+                </a>
+            </div>
+             </div>
+             <CENTER><H2>Get Upto 30% Off New Arrivals</H2></CENTER>
+         </div>
+     </div>
+ </body>
+ </html>
