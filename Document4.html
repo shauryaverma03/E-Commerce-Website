@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="icon" href="logo.png">
+</head>
+<style>
+    h1{
+        background-color:deeppink;
+    }
+    h2{
+        background-color: #bb2d69;
+    }
+    .product {
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    /* background: blue; */
+}
+.product_heading {
+    width: 95%;
+    height: 15%;
+    margin: 0 auto;
+    /* background: red; */
+}
+.product_heading span {
+    display: inline-block;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 130%;
+    position: relative;
+    top: -60px;
+    bottom: 4px;
+}
+.product_heading h2 {
+    display: inline-block;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 130%;
+    position: relative;
+    top: -60px;
+    bottom: 4px;
+}
+.product_pics {
+    width: 95%;
+    height: 85%;
+    margin: -51px auto;
+    overflow: hidden;
+}
+.product_pics .first {
+    height: 100%;
+    width: 23%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .first img {
+    height: 100%;
+    width: 100%;
+}
+.overly-product {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.overly-product .overly-wrapper {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 100%;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s ease
+}
+.overly-wrapper a {
+    text-decoration: none;
+}
+.overly-wrapper h2,h3 {
+    display: block;
+    position: relative;
+    top: 100px;
+    right: 5px;
+    color: white;
+}
+#icon {
+    position: relative;
+    top: 120px;
+    color: #222;
+    background: #fff;
+    padding: 5px 50%;
+}
+#addtocart {
+    display: block;
+    position: relative;
+    top: 100px;
+    right: 5px;
+    color: black;
+}
+.overly-product:hover .overly-wrapper {
+    opacity: 1;
+    height: 100%;
+    bottom: 0;
+}
+.product_pics .second {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .second img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .third {
+    height: 100%;
+    width: 23%;
+    margin-left: 2%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .third img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .forth {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .forth img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .fifth {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .fifth img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .sixth {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .sixth img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .seventh {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .seventh img {
+    height: 100%;
+    width: 100%;
+}
+.product_pics .eightg {
+    height: 100%;
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.product_pics .eighth img {
+    height: 100%;
+    width: 100%;
+}
+footer{
+	/* position: fixed; */
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 215px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0px 0 5px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a .logo{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 5px;
+	margin-bottom: 8px;
+}
+.submit-link{
+    color: white;
+    text-decoration: none;
+
+}
+.Newsletter{
+    text-align: justify;
+}
+list{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list li{
+    margin-left: 20px;
+}
+.list a:hover{
+    color: rgb(5,233,38);
+}
+</style>
+<body>
+    <div class="product">
+        <div class="product_heading">
+            <span><h1> PRODUCTS </h1></span>
+        </div>
+    <div class="product">
+        <div class="product_pics">
+            <div class="first">
+                <a href="https://www.myntra.com/shirts/roadster/roadster-men-black-pure-cotton-casual-shirt/18199958/buy">
+                    <img src="myntra12.png" id="img">
+                    <div class="overly-product">
+                        <div class="overly-wrapper">
+                            <h2>Black Friday Sale</h2>
+                            <h3> ₹531 </h3>
+                            <a href="#"><i class="fas fa-shopping-cart"
+id="icon"></i><span id="addtocart">Add to Cart</span></a>
+                        </div>
+</div> </a>
+            </div>
+            <div class="second">
+                <a href="https://www.myntra.com/shirts/roadster/roadster-men-navy-blue-pure-cotton-sustainable-casual-shirt/9713949/buy">
+                    <img src="myntra13.png" id="img">
+<div class="overly-product">
+    <div class="overly-wrapper">
+        <h2>Black Friday Sale</h2>
+        <h3>₹569</h3>
+        <a href="#"><i class="fas fa-shopping-cart"
+id="icon"></i><span id="addtocart">Add to Cart</span></a>
+    </div>
+</div> </a>
+</div>
+<div class="third">
+<a href="https://www.myntra.com/shirts/highlander/highlander-men-green--white-slim-fit-printed-casual-shirt/11780968/buy">
+<img src="myntra14.png" id="img">
+<div class="overly-product">
+    <div class="overly-wrapper">
+        <h2>Black Friday Sale</h2>
+        <h3>₹493</h3>
+        <a href="#"><i class="fas fa-shopping-cart"
+id="icon"></i><span id="addtocart">Add to Cart</span></a>
+    </div>
+</div> </a>
+</div>
+<div class="forth">
+<a href="https://www.myntra.com/shirts/here%26now/herenow-men-slim-fit-printed-casual-shirt/20226196/buy">
+<img src="myntra15.png"id="img">
+<div class="overly-product">
+    <div class="overly-wrapper">
+        <h2>Black Friday Sale</h2>
+        <h3>₹699</h3>
+        <a href="#"><i class="fas fa-shopping-cart"
+id="icon"></i><span id="addtocart">Add to Cart</span></a>
+    </div>
+</div> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="resend_post_heading">
+    <p style="text-align: center; font-size: 200%; font-weight:
+bold;">LATEST BLOG</p>
+    <p style="text-align: center; margin-top: -30px;
+margin-bottom: 50px;">Bring called seed first of third give itself now
+ment</p>
+</div>
+<div class="resent_post">
+    <div class="post_wrapper">
+        <div class="post1">
+            <center>
+            <img src="image11.jpg">
+            <span><p style="color: #2a3834; font-size: 90%;"> By
+Admin | 5 Commments </p></span>
+            <p style="font-size: 110%;">Sale, fashion, retail, business style and people concept</p>
+            <p style="font-size: 95%;">Happy man with shopping bags at clothing store</p>
+            <input type="button" value="Learn more"
+style="background: none; border: 0; font-size: 16px; color:
+#2a3834"></center>
+        </div>
+        <div class="post2"><center>
+            <img src="image2.jpg">
+            <span><p style="color: #2a3834; font-size: 90%;"> By
+Admin | 10 Commments </p></span>
+            <p style="font-size: 110%;">Businessman trying suit in store</p>
+<input type="button" value="Learn more"
+style="background: none; border: 0; font-size: 16px; color:
+#2a3834"></center>
+                </div>
+                <div class="post3">
+                </div>
+            </div>
+        </div>
+        <section id="subscribe">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="subscribe-area"><center>
+                    <div class="h3">Subscribe our newsletter </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+elit. Ex, velit!</p>
+                    <form action="" class="subscribe-form">
+                      <input type="email" name="" id="" placeholder="Enter
+your Email" class="subscibe_email">
+                      <a href="#"><input type="submit" value="Subscribe"
+class="subscribe_submit"></a></center>
+                    </form>
+                  </div>
+                </div>
+              </div>
+</div>
+</section>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Fashion<span>Ista</span></h3>
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Delivery</a>
+            ·
+            <a href="#">Returns</a>
+            ·
+            <a href="#">Discount</a>
+            ·
+            <a href="#">Special Offer</a>
+            ·
+            <a href="#">Contact Us</a>
+        </p><BR></BR>
+        <h3>POLICIES</h3>
+        <p class="footer-links">
+                <ul class="footer-links">
+                    <li><a href="exchange.html">Exchange/Return Your Order</a></li>
+                    <li><a href="Shipping Policy.html">Shipping Policy</a></li>
+                    <li><a href="Exchange and Refund Policy.html">Exchange and Refund Policy</a></li>
+                    <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    <li><a href="raud Protection.html">Fraud Protection</a></li>
+                </ul></a><br>
+        <p class="footer-company-name">WebAceTechnology &copy; 2023</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Lovely Professional University</span> Phagwara, India</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 01234 56789</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">contact@fashionista.com</a></p>
+        </div><br>
+        <h3>Newsletter</h3><br>
+        <p class="Newsletter">You can be the first one to know about our new<br>releases, latest offers and more. <a href="index.html">Sign up now!</a></p><br><br>
+        <input type="email" class="login1" placeholder="Your mail">
+        <label for="email"></label>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Web Ace Technology is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/"><img src="instagram.jpg" class="logo"></a>
+            <a href="https://in.linkedin.com/"><img src="LinkedIn.png" class="logo"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="twitter.jpg" class="logo"></a>
+            <a href="https://github.com/"><img src="GitHub.png" class="logo"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>
