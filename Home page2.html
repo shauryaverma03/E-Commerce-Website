@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>ZARA</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="logo.png">
+    <style> *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    } .hero{
+        width: 100%;
+    }
+    .row{
+        width: 90%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } .col{
+        flex-basis: 45%;
+    }
+    .slider{
+        height: 80vh;
+        display: flex;
+    }
+    .product img{
+        height: 19vh;
+        margin-bottom: 9px;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    .product img:hover{
+        opacity: 1;
+    }
+.preview img{
+    height: 100%;
+} p{
+    margin-bottom: 20px;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+} 
+.rating{
+    display: flex;
+    height: 15px;
+}
+.rating .fa{
+    color: #008000;
+} .price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+} input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+}
+.related{
+    width: 90%;
+    margin: 0 auto 40px;
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 22%;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+} .details{
+    margin-top: 20px;
+}
+.details p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+}
+.button{
+    color: white;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="slider">
+                    <div class="product">
+                        <img src="myntra1.png" alt="" onclick="clickme(this)">
+                        <img src="myntra2.png" alt="" onclick="clickme(this)">
+                        <img src="myntra3.png" alt="" onclick="clickme(this)">
+                        <img src="myntra4.png"alt="" onclick="clickme(this)">
+                    </div>
+                    <div class="preview">
+                        <img src="myntra1.png" id="imagebox" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <p class="brand">Brand: ZARA</p>
+                    <h2>Men Black & Grey Self-Design Slim Fit Single-Breasted Smart Casual Blazer</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+    </div>
+    <p class="price">Brand: ZARA</p>
+    <p>Size: <select name="size">
+            <option value="select size">select
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+        </select></p>
+    <p>Quantity: <input type="text" value="1"></p>
+    <button type="button">
+        <i class="fa fa-shopping-cart"></i>
+        <a href="shopping site1.html" class="button">Add to cart</a></button>
+</div>
+    </div>
+</div>
+<div class="related">
+    <h2>SIMILAR PRODUCTS</h2><hr><br>
+    <div class="row">
+        <div class="columns">
+            <div class="items">
+<a href="https://www.myntra.com/watches/daniel+klein/daniel-klein-premium-men-coffee-brown-analogue-watch-dk11599-4/2466430/buy"><img src="myntra6.png" alt=""></a>
+<div class="details">
+    <p>Premium Men Coffee Brown Analogue Watch</p>
+    <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+    </div>
+    <p>₹2310</p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="items">
+    <a href="https://www.myntra.com/sweatshirts/allen+solly+sport/allen-solly-sport-men-purple-brand-logo-print-sweatshirt/15480728/buy"><img src="myntra7.png" alt=""></a>
+<div class="details">
+<p>Men Purple Brand Logo Print Sweatshirt</p>
+<div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <i class="fa fa-star-o"></i>
+</div>
+<p>₹1199</p>
+    </div>
+</div>
+</div>
+<div class="columns">
+<div class="items">
+    <a href="https://www.myntra.com/tshirts/hrx+by+hrithik+roshan/hrx-by-hrithik-roshan-men-yellow-printed-cotton-pure-cotton-t-shirt/1700944/buy"><img src="myntra8.png" alt=""></a>
+<div class="details">
+<p>Men Yellow Printed Cotton Pure Cotton T-shirt</p>
+<div class="rating">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-o"></i>
+</div>
+<p>₹314</p>
+</div>
+</div>
+</div>
+<div class="columns">
+    <div class="items">
+        <a href="https://www.myntra.com/tshirts/urbano+fashion/urbano-fashion-men-teal-green-slim-fit-tropical-printed-pure-cotton-t-shirt/12377258/buy"><img src="myntra9.png" alt=""></a>
+        <div class="details">
+            <p>Men Printed Pure Cotton T-shirt</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+        </div>
+            <p>₹494</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="items">
+        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <script>
+            function clickme(smallImg) {
+                var fullImg = document.getElementById("imagebox");
+                fullImg.src = smallImg.src;
+        } </script>
+        </body>
+        </html>
