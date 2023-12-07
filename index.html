@@ -386,12 +386,12 @@ nav a{
     <h1>Login</h1>
     <p>Please enter your e-mail and password:</p><br><br><br>
     <div class="login">
-        <input type="email" class="login1" placeholder="E-mail" required="required">
+        <input type="email" id="username" class="login1" placeholder="E-mail" required="required">
         <label for="customer[email]"></label><br>
-        <input type="password" class="login2" placeholder="Password" required="required">
+        <input type="password" id="password" class="login2" placeholder="Password" required="required">
         <label for="customer[password]"></label><br><br>
-        <button type="submit" class="submit">
-            <a href="shopping site1.html" class="submit-link">Submit</a>
+        <button type="button" class="submit">
+            <a href="shopping site1.html" class="submit-link" onclick="validateLogin()">Submit</a>
         </button><br>
         <span class="register">
             New customer? <a href="register.html" class="link">Create an Account</a>
@@ -459,5 +459,19 @@ nav a{
             </div>
         </div>
     </footer>
+	<!-- start of javascript -->
+    <script>
+        function validateLogin() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+          // Simple validation, you may want to enhance this based on your requirements
+          if (username === "example" && password === "password") {
+            alert("Login successful!");
+          } else {
+            alert("Invalid username or password. Please try again.");
+          }
+        }
+      </script>
 </body>
 </html>
