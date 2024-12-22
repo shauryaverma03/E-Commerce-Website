@@ -2,7 +2,7 @@
 
 ## About This Project
 
-<p>Welcome to my E-Commerce Website project! 🎉This is a web-based platform designed to deliver an interactive and user-friendly online shopping experience. I built this project during my first year of college as part of my web development learning journey, and I’m continuously working to enhance it further as I progress in my studies. 🚀</p>
+Welcome to my E-Commerce Website project! 🎉This is a web-based platform designed to deliver an interactive and user-friendly online shopping experience. I built this project during my first year of college as part of my web development learning journey, and I’m continuously working to enhance it further as I progress in my studies. 🚀
 
 Features
 
