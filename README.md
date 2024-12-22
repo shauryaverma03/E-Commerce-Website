@@ -40,9 +40,9 @@ I’d love to hear your feedback and suggestions to improve this project further
 
 Connect with Me
 
-LinkedIn: Shaurya Verma
+LinkedIn: [Shaurya Verma](https://www.linkedin.com/in/shaurya47/)
 
-GitHub: shauryaverma03
+GitHub: [shauryaverma03](https://github.com/shauryaverma03)
 
 <hr>
 
