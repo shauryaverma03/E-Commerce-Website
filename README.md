@@ -44,6 +44,6 @@ LinkedIn: Shaurya Verma
 
 GitHub: shauryaverma03
 
-<br>
+<hr>
 
 Thank you for checking out my project! 🌟
