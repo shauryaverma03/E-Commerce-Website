@@ -1,4 +1,4 @@
-<# Heading 1 >E-Commerce Website</Heading 1>
+# E-Commerce Website
 
 <# h2>About This Project</h2>
 
