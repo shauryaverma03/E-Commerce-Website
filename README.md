@@ -43,6 +43,6 @@ LinkedIn: [Shaurya Verma](https://www.linkedin.com/in/shaurya47/)
 
 GitHub: [shauryaverma03](https://github.com/shauryaverma03)
 
-<hr>
+## 
 
 Thank you for checking out my project! 🌟
