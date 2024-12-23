@@ -48,3 +48,7 @@ GitHub: [shauryaverma03](https://github.com/shauryaverma03)
 <hr>
 
 Thank you for checking out my project! 🌟
+
+
+
+Removed unnecessary horizontal lines from README
