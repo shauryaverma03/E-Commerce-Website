@@ -33,11 +33,11 @@ cd E-Commerce-Website
 # Open index.html in your browser.
 ```
 
-Feedback
+## Feedback
 
 I’d love to hear your feedback and suggestions to improve this project further! Feel free to reach out or submit an issue in this repository.
 
-Connect with Me
+## Connect with Me
 
 LinkedIn: [Shaurya Verma](https://www.linkedin.com/in/shaurya47/)
 
