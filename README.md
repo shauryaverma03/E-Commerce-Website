@@ -45,8 +45,6 @@ I’d love to hear your feedback and suggestions to improve this project further
 
 ## 
 
-Thank you for checking out my project! 🌟
-
 ## ☕ Support Me  
 
 If you enjoy my work, consider buying me a coffee! Your support keeps me going.  
